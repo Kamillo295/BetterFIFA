@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Turniej.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Turniej.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Turniej.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Turniej.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Druzyna.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Druzyna.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Druzyna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Druzyna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Mecz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Mecz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Mecz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Mecz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\BetterFIFA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:BetterFIFA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BetterFIFA.cpp",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\BetterFIFA.cpp",
+              "RelativeDocumentMoniker": "BetterFIFA.cpp",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\BetterFIFA.cpp",
+              "RelativeToolTip": "BetterFIFA.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T15:58:48.441Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Turniej.h",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Turniej.h",
+              "RelativeDocumentMoniker": "Turniej.h",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Turniej.h",
+              "RelativeToolTip": "Turniej.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T18:41:23.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Turniej.cpp",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Turniej.cpp",
+              "RelativeDocumentMoniker": "Turniej.cpp",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Turniej.cpp",
+              "RelativeToolTip": "Turniej.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T18:41:31.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Druzyna.h",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Druzyna.h",
+              "RelativeDocumentMoniker": "Druzyna.h",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Druzyna.h",
+              "RelativeToolTip": "Druzyna.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T15:59:46.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Druzyna.cpp",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Druzyna.cpp",
+              "RelativeDocumentMoniker": "Druzyna.cpp",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Druzyna.cpp",
+              "RelativeToolTip": "Druzyna.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T15:59:34.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mecz.h",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Mecz.h",
+              "RelativeDocumentMoniker": "Mecz.h",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Mecz.h",
+              "RelativeToolTip": "Mecz.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T17:59:18.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mecz.cpp",
+              "DocumentMoniker": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Mecz.cpp",
+              "RelativeDocumentMoniker": "Mecz.cpp",
+              "ToolTip": "C:\\Users\\U\u017Cytkownik\\Desktop\\BetterFIFA\\Mecz.cpp",
+              "RelativeToolTip": "Mecz.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T17:59:27.509Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
