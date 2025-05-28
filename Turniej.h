@@ -8,16 +8,19 @@
 class Turniej {
 private:
     int miejsce;
-    int MojaDruzyna;
-    std::vector<Druzyna> druzyny;
-    std::vector<std::pair<int, int>> rozegraneMecze;
+    vector<Druzyna> druzyny;
+    vector<pair<int, int>> rozegraneMecze;
 
     bool czyMeczJuzRozegrany(int id1, int id2);
 
 public:
+    static int MojaDruzyna;
+
     Turniej();
     void rozpocznij();
     void wyswietlTabele();
+    void naglowekTabeli();
+    void wyswietlWybranaDruzyne() const;
 };
 
 #endif // TURNIEJ_H

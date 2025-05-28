@@ -26,7 +26,10 @@ Turniej::Turniej() {
         Druzyna(15, "PSG", 90),
         Druzyna(16, "LKS Przelom Kaniow", 30)
     };
+    miejsce = 1;
 }
+
+int Turniej::MojaDruzyna = 0;
 
 bool Turniej::czyMeczJuzRozegrany(int id1, int id2) {
     for (auto& m : rozegraneMecze) {
@@ -38,15 +41,48 @@ bool Turniej::czyMeczJuzRozegrany(int id1, int id2) {
     return false;
 }
 
+void Turniej::naglowekTabeli() {
+    cout << endl << string(20, '=') << " TABELA " << string(20, '=') << endl;
+    cout << left
+        << setw(3) << "ID" << " "
+        << setw(20) << "Nazwa"
+        << setw(10) << "Sila"
+        << setw(10) << "Punkty" << endl;
+    cout << string(45, '-') << endl;
+}
+
+void Turniej::wyswietlWybranaDruzyne() const {
+    for (const auto& d : druzyny)
+    {
+        if (d.getID() == Turniej::MojaDruzyna)
+        {
+            cout << "Twoja wybrana druzyna: ";
+            cout << d.getNazwa();
+            cout <<", POWODZENIA!!!" << endl;
+            return;
+        }
+    }
+    cout << "Nie znaleziono druzyny o podanym ID. Nie bierzesz udzialu :(" << endl;
+}
+
 void Turniej::rozpocznij() {
     srand(time(NULL));
 
+    Turniej::naglowekTabeli();
     for (auto& d : druzyny)
     {
         d.wyswietlDane();
     }
-    cout << "Wybierz id swojej druzyny: ";
+    cout << endl << "Wybierz id swojej druzyny: ";
     cin >> MojaDruzyna;
+
+    while (MojaDruzyna == 2)
+    {
+        cout << "Zastanow sie jeszcze raz... ";
+        cin >> MojaDruzyna;
+    }
+
+    wyswietlWybranaDruzyne();
 
     for (int i = 0; i < druzyny.size(); i++) {
         int meczeRozegrane = 0;
@@ -66,24 +102,21 @@ void Turniej::rozpocznij() {
 }
 
 void Turniej::wyswietlTabele() {
-    std::cout << "\n=== TABELA KONCOWA (POSORTOWANA) ===\n";
-    std::cout << std::left << std::setw(20) << "Nazwa"
-        << std::setw(10) << "Sila"
-        << std::setw(10) << "Punkty" << std::endl;
-    std::cout << std::string(40, '-') << std::endl;
+
+    naglowekTabeli();
 
     // Kopia druzyn
-    std::vector<Druzyna> posortowaneDruzyny = druzyny;
+    vector<Druzyna> posortowaneDruzyny = druzyny;
 
     // Sortowanie malej¹co po punktach
-    std::sort(posortowaneDruzyny.begin(), posortowaneDruzyny.end(),
+    sort(posortowaneDruzyny.begin(), posortowaneDruzyny.end(),
         [](const Druzyna& a, const Druzyna& b) {
             return a.getPunkty() > b.getPunkty();
         });
 
     // Wyœwietlanie
     for (const auto& d : posortowaneDruzyny) {
-        std::cout << miejsce + 1 << ". ";
+        cout << "(" << miejsce << ") ";
         d.wyswietlDane();
         miejsce++;
     }

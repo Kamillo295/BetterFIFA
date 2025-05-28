@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Druzyna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Druzyna.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Turniej.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Turniej.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Turniej.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Turniej.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Mecz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,8 +15,20 @@
       "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Mecz.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Turniej.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Turniej.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Druzyna.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\BetterFIFA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:BetterFIFA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ACD77B20-87DD-4DDE-B450-A64F14D29CF0}|BetterFIFA.vcxproj|solutionrelative:Druzyna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "BetterFIFA.cpp",
               "DocumentMoniker": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\BetterFIFA.cpp",
               "RelativeDocumentMoniker": "BetterFIFA.cpp",
@@ -51,7 +51,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-12T15:58:48.441Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -65,72 +66,72 @@
               "RelativeDocumentMoniker": "Turniej.h",
               "ToolTip": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Turniej.h",
               "RelativeToolTip": "Turniej.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-12T18:41:23.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Turniej.cpp",
               "DocumentMoniker": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Turniej.cpp",
               "RelativeDocumentMoniker": "Turniej.cpp",
               "ToolTip": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Turniej.cpp",
               "RelativeToolTip": "Turniej.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-12T18:41:31.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Druzyna.h",
               "DocumentMoniker": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.h",
               "RelativeDocumentMoniker": "Druzyna.h",
               "ToolTip": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.h",
               "RelativeToolTip": "Druzyna.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-12T15:59:46.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Druzyna.cpp",
               "DocumentMoniker": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.cpp",
               "RelativeDocumentMoniker": "Druzyna.cpp",
               "ToolTip": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Druzyna.cpp",
               "RelativeToolTip": "Druzyna.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvw4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-12T15:59:34.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Mecz.h",
               "DocumentMoniker": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Mecz.h",
               "RelativeDocumentMoniker": "Mecz.h",
               "ToolTip": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Mecz.h",
               "RelativeToolTip": "Mecz.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-12T17:59:18.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Mecz.cpp",
               "DocumentMoniker": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Mecz.cpp",
               "RelativeDocumentMoniker": "Mecz.cpp",
               "ToolTip": "C:\\Users\\kammi\\Desktop\\BetterFIFA\\Mecz.cpp",
               "RelativeToolTip": "Mecz.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-12T17:59:27.509Z",
               "EditorCaption": ""
