@@ -8,11 +8,12 @@ Mecz::Mecz(Druzyna* d1, Druzyna* d2)
 }
 
 void Mecz::rozegraj() {
-    int silaD1 = druzyna1->getSila() + (rand() % 21 - 10);
-    int silaD2 = druzyna2->getSila() + (rand() % 21 - 10);
+    int silaD1 = druzyna1->getSila() + (rand() % 21);
+    int silaD2 = druzyna2->getSila() + (rand() % 21);
 
-    std::cout << druzyna1->getNazwa() << " [" << silaD1 << "] vs "
-        << druzyna2->getNazwa() << " [" << silaD2 << "]\n";
+    std::cout << druzyna1->getNazwa() << " [" << silaD1 << "] vs " << druzyna2->getNazwa() << " [" << silaD2 << "]\n";
+
+
 
     if (silaD1 > silaD2) {
         std::cout << "Wygrywa: " << druzyna1->getNazwa() << "\n";

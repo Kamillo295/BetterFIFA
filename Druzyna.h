@@ -9,13 +9,15 @@ private:
 	string nazwa;
 	int sila;
 	int punkty;
+	int id;
 
 public:
-	Druzyna(string nazwa, int sila);
+	Druzyna(int id, string nazwa, int sila);
 
 	string getNazwa() const;
 	int getSila() const;
 	int getPunkty() const;
+	int getID() const;
 
 	void dodajPunkty(int p);
 	void wyswietlDane() const;

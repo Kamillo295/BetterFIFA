@@ -7,6 +7,8 @@
 
 class Turniej {
 private:
+    int miejsce;
+    int MojaDruzyna;
     std::vector<Druzyna> druzyny;
     std::vector<std::pair<int, int>> rozegraneMecze;
 

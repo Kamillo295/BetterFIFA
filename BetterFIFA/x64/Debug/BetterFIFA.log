@@ -1,3 +1,7 @@
-﻿  Turniej.cpp
-C:\Users\Użytkownik\Desktop\BetterFIFA\Turniej.cpp(40,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-  BetterFIFA.vcxproj -> C:\Users\Użytkownik\Desktop\BetterFIFA\x64\Debug\BetterFIFA.exe
+﻿  BetterFIFA.cpp
+  Druzyna.cpp
+  Mecz.cpp
+  Turniej.cpp
+C:\Users\kammi\Desktop\BetterFIFA\Turniej.cpp(42,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Generowanie kodu...
+  BetterFIFA.vcxproj -> C:\Users\kammi\Desktop\BetterFIFA\x64\Debug\BetterFIFA.exe
