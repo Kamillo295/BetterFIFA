@@ -11,8 +11,6 @@ private:
     vector<Druzyna> druzyny;
     vector<pair<int, int>> rozegraneMecze;
 
-    bool czyMeczJuzRozegrany(int id1, int id2);
-
 public:
     static int MojaDruzyna;
 

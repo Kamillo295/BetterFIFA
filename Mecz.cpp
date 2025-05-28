@@ -11,30 +11,96 @@ Mecz::Mecz(Druzyna* d1, Druzyna* d2)
 }
 
 void Mecz::rozegraj() {
-    int silaD1 = druzyna1->getSila() + (rand() % 21);
-    int silaD2 = druzyna2->getSila() + (rand() % 21);
+    int silaD1 = druzyna1->getSila();
+    int silaD2 = druzyna2->getSila();
 
     cout << druzyna1->getNazwa() << " [" << silaD1 << "] vs " 
          << druzyna2->getNazwa() << " [" << silaD2 << "]" << endl;
 
+    int iloscZdarzen = (rand() % 7) + 2;
+
     if (druzyna1->getID() == Turniej::MojaDruzyna || druzyna2->getID() == Turniej::MojaDruzyna)
     {
-        cout << "aaaaaaaa" << endl;
+        for (int i = 0; i < iloscZdarzen; i++)
+        {
+            silaD1 = druzyna1->getSila() + (rand() % 21);
+            silaD2 = druzyna2->getSila() + (rand() % 21);
+
+            if (silaD1 > silaD2) {
+                druzyna1->dodajBramke(1);
+            }
+            else {
+                druzyna2->dodajBramke(1);
+            }
+        }
+
+        int bramkiD1 = druzyna1->getBramki();
+        int bramkiD2 = druzyna2->getBramki();
+
+        if (bramkiD1 > bramkiD2) {
+            cout << "Wygrywa: " << druzyna1->getNazwa() << "\t" << bramkiD1 << " : " << bramkiD2 << endl;
+            druzyna1->dodajPunkty(3);
+            int binals = bramkiD1 - bramkiD2;
+            druzyna1->aktualizujBilansBramek(binals);
+            druzyna2->aktualizujBilansBramek(binals * (-1));
+        }
+        else if (bramkiD2 > bramkiD1) {
+            cout << "Wygrywa: " << druzyna2->getNazwa() << "\t" << bramkiD2 << " : " << bramkiD1 << endl;
+            druzyna2->dodajPunkty(3);
+            int binals = bramkiD2 - bramkiD1;
+            druzyna2->aktualizujBilansBramek(binals);
+            druzyna1->aktualizujBilansBramek(binals * (-1));
+        }
+        else {
+            cout << "Remis!" << "\t" << bramkiD1 << " : " << bramkiD2 << endl;
+            druzyna1->dodajPunkty(1);
+            druzyna2->dodajPunkty(1);
+        }
+        druzyna1->zerowanieBramek();
+        druzyna2->zerowanieBramek();
+    }
+    else
+    {
+        for (int i = 0; i < iloscZdarzen; i++)
+        {
+            silaD1 = druzyna1->getSila() + (rand() % 21);
+            silaD2 = druzyna2->getSila() + (rand() % 21);
+
+            if (silaD1 > silaD2) {
+                druzyna1->dodajBramke(1);
+            }
+            else {
+                druzyna2->dodajBramke(1);
+            }
+        }
+
+        int bramkiD1 = druzyna1->getBramki();
+        int bramkiD2 = druzyna2->getBramki();
+
+        if (bramkiD1 > bramkiD2) {
+            cout << "Wygrywa: " << druzyna1->getNazwa() << "\t" << bramkiD1 << " : " << bramkiD2 << endl;
+            druzyna1->dodajPunkty(3);
+            int binals = bramkiD1 - bramkiD2;
+            druzyna1->aktualizujBilansBramek(binals);
+            druzyna2->aktualizujBilansBramek(binals * (-1));
+        }
+        else if (bramkiD2 > bramkiD1) {
+            cout << "Wygrywa: " << druzyna2->getNazwa() << "\t" << bramkiD2 << " : " << bramkiD1 << endl;
+            druzyna2->dodajPunkty(3);
+            int binals = bramkiD2 - bramkiD1;
+            druzyna2->aktualizujBilansBramek(binals);
+            druzyna1->aktualizujBilansBramek(binals * (-1));
+        }
+        else {
+            cout << "Remis!" << "\t" << bramkiD1 << " : " << bramkiD2 << endl;
+            druzyna1->dodajPunkty(1);
+            druzyna2->dodajPunkty(1);
+        }
+        druzyna1->zerowanieBramek();
+        druzyna2->zerowanieBramek();
     }
 
-    if (silaD1 > silaD2) {
-        //std::cout << "Wygrywa: " << druzyna1->getNazwa() << "\n";
-        druzyna1->dodajPunkty(3);
-    }
-    else if (silaD2 > silaD1) {
-        //std::cout << "Wygrywa: " << druzyna2->getNazwa() << "\n";
-        druzyna2->dodajPunkty(3);
-    }
-    else {
-        //std::cout << "Remis!\n";
-        druzyna1->dodajPunkty(1);
-        druzyna2->dodajPunkty(1);
-    }
+    
 
-    //std::cout << "------------------------------\n";
+    cout << string(50, '-') << endl;
 }
