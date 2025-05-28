@@ -7,7 +7,6 @@
 
 class Turniej {
 private:
-    int miejsce;
     vector<Druzyna> druzyny;
     vector<pair<int, int>> rozegraneMecze;
 

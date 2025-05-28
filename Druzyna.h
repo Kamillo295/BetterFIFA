@@ -26,6 +26,7 @@ public:
 	void dodajPunkty(int p);
 	void dodajBramke(int b);
 	void aktualizujBilansBramek(int bil);
+	void aktualizujID(int noweID);
 	void zerowanieBramek();
 	void wyswietlDane() const;
 

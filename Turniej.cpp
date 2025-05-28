@@ -26,7 +26,6 @@ Turniej::Turniej() {
         Druzyna(15, "PSG", 90),
         Druzyna(16, "LKS Przelom Kaniow", 30)
     };
-    miejsce = 1;
 }
 
 int Turniej::MojaDruzyna = 0;
@@ -126,10 +125,13 @@ void Turniej::wyswietlTabele() {
         });
 
     // Wyœwietlanie
-    for (const auto& d : posortowaneDruzyny) {
-        cout << "(" << miejsce << ") ";
+    int noweID = 1;
+    for (auto& d : posortowaneDruzyny) {
+        d.aktualizujID(noweID);
         d.wyswietlDane();
-        miejsce++;
+        noweID++;
     }
+
+    cout << "Zwyciezca turnieju: " << posortowaneDruzyny[0].getNazwa() << endl;
 }
 

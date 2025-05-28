@@ -11,6 +11,7 @@ private:
 public:
     Mecz(Druzyna* d1, Druzyna* d2);
     void rozegraj();
+    void symulacja();
 };
 
 #endif // MECZ_H

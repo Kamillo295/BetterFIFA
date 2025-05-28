@@ -37,6 +37,10 @@ void Druzyna::aktualizujBilansBramek(int bil) {
     bilansBramek += bil;
 }
 
+void Druzyna::aktualizujID(int noweID) {
+    id = noweID;
+}
+
 int Druzyna::getBilans() const {
     return bilansBramek;
 }
