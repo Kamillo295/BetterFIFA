@@ -12,6 +12,8 @@ private:
 
 public:
     static int MojaDruzyna;
+    static int IloscMeczy;
+    static int DlugoscMeczy;
 
     Turniej();
     void rozpocznij();

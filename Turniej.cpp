@@ -29,6 +29,8 @@ Turniej::Turniej() {
 }
 
 int Turniej::MojaDruzyna = 0;
+int Turniej::IloscMeczy = 0;
+int Turniej::DlugoscMeczy = 0;
 
 void Turniej::naglowekTabeli() {
     cout << string(26, '=') << " TABELA " << string(26, '=') << endl;
@@ -72,9 +74,15 @@ void Turniej::rozpocznij() {
         cin >> MojaDruzyna;
     }
 
+    cout << endl << "Wybierz ilosc meczy jaka chcesz zagrac (max 12): ";
+    cin >> IloscMeczy;
+
+    cout << endl << "Wybierz ile chcesz maksymalnie wydarzen na mecz: ";
+    cin >> DlugoscMeczy;
+
     wyswietlWybranaDruzyne();
 
-    const int MAX_MECZE = 8;
+    const int MAX_MECZE = Turniej::IloscMeczy;
     vector<int> meczeNaDruzyne(druzyny.size(), 0);
 
     // Wygeneruj wszystkie mo¿liwe pary (i < j, ¿eby nie by³o duplikatów)
