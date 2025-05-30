@@ -7,7 +7,7 @@ using namespace std;
 
 class Wyzwanie {
 protected:
-	string rodzaj;		//karny, quiz, rzut wolny
+	string rodzaj;		//karny, quiz, celnosc
 	Druzyna* druzynaAktywna;	
 
 public:
@@ -32,10 +32,11 @@ public:
 
 class Celnosc : public Wyzwanie {
 private:
+	Druzyna* druzynaNieaktywna;
 	vector<string> pozycje;
 
 public:
-	Celnosc(Druzyna* d1);
+	Celnosc(Druzyna* d1, Druzyna* d2);
 	void wypiszRodzajWyzwania() const override;
 	void wykonajStrzal();
 

@@ -19,20 +19,8 @@ void Mecz::symulacja() {
         int silaD1 = druzyna1->getSila() + (rand() % 21);
         int silaD2 = druzyna2->getSila() + (rand() % 21);
 
-
-        int silaMocniejszej = 0;
         int sumaSil = silaD1 + silaD2;
-
-        if (silaD1 > silaD2)
-        {
-            silaMocniejszej = silaD1;
-        }
-        else
-        {
-            silaMocniejszej = silaD2;
-        }
         int szansa = rand() % sumaSil;
-
 
         if (szansa < silaD1) {
             druzyna1->dodajBramke(1);
@@ -75,6 +63,12 @@ void showRodzajWyzwania(Wyzwanie* wyzw) {
     cout << "-----------------------\n";
 }
 
+int iloscMinut(int &podzial, int addMins) {
+    cout << "Minuta: " << podzial << endl;
+    podzial += addMins;
+    return podzial;
+}
+
 void Mecz::rozegraj() {
     
     int silaD1 = druzyna1->getSila();
@@ -88,53 +82,74 @@ void Mecz::rozegraj() {
     if (druzyna1->getID() == Turniej::MojaDruzyna || druzyna2->getID() == Turniej::MojaDruzyna)
     {
         int iloscZdarzen = (rand() % Turniej::DlugoscMeczy);
+        int minuta = 0;
+        int podzialNaMinuty = 0;
+
+        if (iloscZdarzen == 0)
+            podzialNaMinuty = 0;
+
+        else
+            podzialNaMinuty = 90 / iloscZdarzen;
+
+        int dodaneMinuty = podzialNaMinuty;
         for (int i = 0; i < iloscZdarzen; i++)
         {
             int silaD1 = druzyna1->getSila() + (rand() % 21);
             int silaD2 = druzyna2->getSila() + (rand() % 21);
             
-
-            int silaMocniejszej = 0;
             int sumaSil = silaD1 + silaD2;
-
-            if (silaD1 > silaD2)
-            {
-                silaMocniejszej = silaD1;
-            }
-            else
-            {
-                silaMocniejszej = silaD2;
-            }
             int szansa = rand() % sumaSil;
+            iloscMinut(podzialNaMinuty, dodaneMinuty);
+            int rodzajWyzwania = (rand() % 2) + 1;
 
-
-            if (druzyna1->getID() == Turniej::MojaDruzyna) {
-                if (szansa < silaD1) {
-                    Penalty pen(druzyna1);
-                    showRodzajWyzwania(&pen);
-                    pen.strzelaj();
+            switch (rodzajWyzwania)
+            {
+            case 1:
+                if (druzyna1->getID() == Turniej::MojaDruzyna) {
+                    if (szansa < silaD1) {
+                        Penalty pen(druzyna1);
+                        showRodzajWyzwania(&pen);
+                        pen.strzelaj();
+                    }
+                    else {
+                        Penalty pen(druzyna2);
+                        showRodzajWyzwania(&pen);
+                        pen.obron();
+                    }
                 }
-                else {
-                    Penalty pen(druzyna1);
-                    showRodzajWyzwania(&pen);
-                    pen.obron();
+
+                if (druzyna2->getID() == Turniej::MojaDruzyna) {
+                    if (szansa < silaD2) {
+                        Penalty pen(druzyna2);
+                        showRodzajWyzwania(&pen);
+                        pen.strzelaj();
+                    }
+                    else {
+                        Penalty pen(druzyna1);
+                        showRodzajWyzwania(&pen);
+                        pen.obron();
+                    }
+                }
+                break;
+                
+            case 2:
+                if (druzyna1->getID() == Turniej::MojaDruzyna && szansa < silaD1)
+                {
+                    Celnosc cel(druzyna1, druzyna2);
+                    cel.wykonajStrzal();
+                }
+                if (druzyna2->getID() == Turniej::MojaDruzyna && szansa < silaD2)
+                {
+                    Celnosc cel(druzyna2, druzyna1);
+                    cel.wykonajStrzal();
                 }
             }
 
-            if (druzyna2->getID() == Turniej::MojaDruzyna) {
-                if (szansa < silaD2) {
-                    Penalty pen(druzyna1);
-                    showRodzajWyzwania(&pen);
-                    pen.strzelaj();
-                }
-                else {
-                    Penalty pen(druzyna1);
-                    showRodzajWyzwania(&pen);
-                    pen.obron();
-                }
-            }
+
 
         }
+
+
 
         int bramkiD1 = druzyna1->getBramki();
         int bramkiD2 = druzyna2->getBramki();
