@@ -140,6 +140,6 @@ void Turniej::wyswietlTabele() {
         noweID++;
     }
 
-    cout << "Zwyciezca turnieju: " << posortowaneDruzyny[0].getNazwa() << endl;
+    cout << endl << "Zwyciezca turnieju: " << posortowaneDruzyny[0].getNazwa() << endl;
 }
 

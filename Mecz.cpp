@@ -19,12 +19,28 @@ void Mecz::symulacja() {
         int silaD1 = druzyna1->getSila() + (rand() % 21);
         int silaD2 = druzyna2->getSila() + (rand() % 21);
 
-        if (silaD1 > silaD2) {
+
+        int silaMocniejszej = 0;
+        int sumaSil = silaD1 + silaD2;
+
+        if (silaD1 > silaD2)
+        {
+            silaMocniejszej = silaD1;
+        }
+        else
+        {
+            silaMocniejszej = silaD2;
+        }
+        int szansa = rand() % sumaSil;
+
+
+        if (szansa < silaD1) {
             druzyna1->dodajBramke(1);
         }
         else {
             druzyna2->dodajBramke(1);
         }
+
     }
 
     int bramkiD1 = druzyna1->getBramki();
@@ -77,8 +93,23 @@ void Mecz::rozegraj() {
             int silaD1 = druzyna1->getSila() + (rand() % 21);
             int silaD2 = druzyna2->getSila() + (rand() % 21);
             
-            if (silaD1 > silaD2) {
-                if (druzyna1->getID() == Turniej::MojaDruzyna) {
+
+            int silaMocniejszej = 0;
+            int sumaSil = silaD1 + silaD2;
+
+            if (silaD1 > silaD2)
+            {
+                silaMocniejszej = silaD1;
+            }
+            else
+            {
+                silaMocniejszej = silaD2;
+            }
+            int szansa = rand() % sumaSil;
+
+
+            if (druzyna1->getID() == Turniej::MojaDruzyna) {
+                if (szansa < silaD1) {
                     Penalty pen(druzyna1);
                     showRodzajWyzwania(&pen);
                     pen.strzelaj();
@@ -89,6 +120,20 @@ void Mecz::rozegraj() {
                     pen.obron();
                 }
             }
+
+            if (druzyna2->getID() == Turniej::MojaDruzyna) {
+                if (szansa < silaD2) {
+                    Penalty pen(druzyna1);
+                    showRodzajWyzwania(&pen);
+                    pen.strzelaj();
+                }
+                else {
+                    Penalty pen(druzyna1);
+                    showRodzajWyzwania(&pen);
+                    pen.obron();
+                }
+            }
+
         }
 
         int bramkiD1 = druzyna1->getBramki();

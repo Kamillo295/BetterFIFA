@@ -8,11 +8,25 @@
 using namespace std;
 
 Wyzwanie::Wyzwanie(string rodz, Druzyna* d1)
-    : rodzaj(rodz), druzynaAktywna(d1) {}
+    : rodzaj(rodz), druzynaAktywna(d1) {
+}
 
 Penalty::Penalty(Druzyna* d1)
     : Wyzwanie("Rzut karny", d1) {
 }
+
+Celnosc::Celnosc(Druzyna* d1)
+    : Wyzwanie("Gra na cela", d1) {
+
+    pozycje = {
+        "|X| | | | |",
+        "| |X| | | |",
+        "| | |X| | |",
+        "| | | |X| |",
+        "| | | | |X|"
+    };
+}
+
 
 
 void Penalty::wypiszRodzajWyzwania() const {
@@ -25,7 +39,7 @@ void Penalty::obron() {
 
     int MijesceStrzalu = (rand() % 5) + 1;
     int gdzie = 0;
-    cout << "Bronisz rzut karny" << endl << endl;
+    cout << "Bronisz rzut karny" << endl;
     cout << R"(
     ----------------------------------------
     |            |            |            | 
@@ -85,6 +99,17 @@ void Penalty::strzelaj() {
     }
 }
 
+void Celnosc::wypiszRodzajWyzwania() const {
+    cout << endl << endl;
+    cout << "Rodzaj wyzwania: " << rodzaj << endl;
+}
+
+void Celnosc::wykonajStrzal() {
+    cout << "Nacicnij Enter w momencie gdy X bêdzie na srodku!" << endl;
+
+}
+
 Wyzwanie::~Wyzwanie() {}
 Penalty::~Penalty() {}
+Celnosc::~Celnosc() {}
 

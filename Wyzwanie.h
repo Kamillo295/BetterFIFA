@@ -30,4 +30,16 @@ public:
 	~Penalty() override;
 };
 
+class Celnosc : public Wyzwanie {
+private:
+	vector<string> pozycje;
+
+public:
+	Celnosc(Druzyna* d1);
+	void wypiszRodzajWyzwania() const override;
+	void wykonajStrzal();
+
+	~Celnosc() override;
+};
+
 #endif // !WYZWANIE_H
