@@ -100,7 +100,9 @@ void Mecz::rozegraj() {
             int sumaSil = silaD1 + silaD2;
             int szansa = rand() % sumaSil;
             iloscMinut(podzialNaMinuty, dodaneMinuty);
-            int rodzajWyzwania = (rand() % 2) + 1;
+            //int rodzajWyzwania = (rand() % 2) + 1;
+            int rodzajWyzwania = 2;
+            cout << endl;
 
             switch (rodzajWyzwania)
             {
@@ -133,16 +135,34 @@ void Mecz::rozegraj() {
                 break;
                 
             case 2:
-                if (druzyna1->getID() == Turniej::MojaDruzyna && szansa < silaD1)
-                {
-                    Celnosc cel(druzyna1, druzyna2);
-                    cel.wykonajStrzal();
+
+                if (druzyna1->getID() == Turniej::MojaDruzyna) {
+                    if (szansa < silaD1) {
+                        cout << "Twoja druzyna strzela!" << endl;
+                        Celnosc cel(druzyna1, druzyna2);
+                        cel.wykonajStrzal();
+                    }
+                    else {
+                        cout << "Obron strzal przeciwnika!" << endl;
+                        /*Celnosc cel(druzyna2, druzyna1);
+                        cel.wykonajStrzal();*/
+                    }
                 }
-                if (druzyna2->getID() == Turniej::MojaDruzyna && szansa < silaD2)
-                {
-                    Celnosc cel(druzyna2, druzyna1);
-                    cel.wykonajStrzal();
+
+                if (druzyna2->getID() == Turniej::MojaDruzyna) {
+                    if (szansa < silaD2) {
+                        cout << "Twoja druzyna strzela!" << endl;
+                        Celnosc cel(druzyna2, druzyna1);
+                        cel.wykonajStrzal();
+                    }
+                    else {
+                        cout << "Obron strzal przeciwnika!" << endl;
+                       /* Celnosc cel(druzyna1, druzyna2);
+                        cel.wykonajStrzal();*/
+                    }
                 }
+                break;
+
             }
 
 

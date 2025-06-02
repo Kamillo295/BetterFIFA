@@ -130,12 +130,14 @@
     <ClCompile Include="BetterFIFA.cpp" />
     <ClCompile Include="Druzyna.cpp" />
     <ClCompile Include="Mecz.cpp" />
+    <ClCompile Include="Quiz.cpp" />
     <ClCompile Include="Turniej.cpp" />
     <ClCompile Include="Wyzwanie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Druzyna.h" />
     <ClInclude Include="Mecz.h" />
+    <ClInclude Include="Quiz.h" />
     <ClInclude Include="Turniej.h" />
     <ClInclude Include="Wyzwanie.h" />
   </ItemGroup>
