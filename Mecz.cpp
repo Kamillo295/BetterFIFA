@@ -145,7 +145,7 @@ void Mecz::rozegraj() {
                     else {
                         cout << "Obron strzal przeciwnika!" << endl;
                         /*Celnosc cel(druzyna2, druzyna1);
-                        cel.wykonajStrzal();*/
+                        cel.wykonajStrzal();*///
                     }
                 }
 
